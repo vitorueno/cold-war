@@ -1,0 +1,23 @@
+{
+  "name": "cold-war",
+  "version": "1.0.0",
+  "description": ":snowflake: Back-end of my decision's game based on the cold war - Made with Node &amp; Express.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitorueno/cold-war.git"
+  },
+  "keywords": [],
+  "author": "Vítor Augusto Ueno Otto <vitoruenootto@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitorueno/cold-war/issues"
+  },
+  "homepage": "https://github.com/vitorueno/cold-war#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
