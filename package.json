@@ -4,7 +4,8 @@
   "description": ":snowflake: Back-end of my decision's game based on the cold war - Made with Node &amp; Express.",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev src/server.ts"
+    "dev": "ts-node-dev src/server.ts",
+    "knex:migrate": "knex migrate:latest --knexfile knexfile.ts migrate:latest"
   },
   "repository": {
     "type": "git",
