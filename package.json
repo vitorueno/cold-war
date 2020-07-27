@@ -4,7 +4,7 @@
   "description": ":snowflake: Back-end of my decision's game based on the cold war - Made with Node &amp; Express.",
   "main": "index.js",
   "scripts": {
-    "dev":  "ts-node-dev src/server.ts"
+    "dev": "ts-node-dev src/server.ts"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/vitorueno/cold-war#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "knex": "^0.21.2",
+    "sqlite3": "^5.0.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.7",
