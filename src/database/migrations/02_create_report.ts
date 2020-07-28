@@ -7,7 +7,7 @@ export async function up(knex: Knex) {
         table.string('title').notNullable();
         table.string('description').notNullable();
         table.integer('id_chapter').notNullable();
-        table.foreign('id_chapter').references('id').inTable('chapter');
+        table.foreign('id_chapter').references('chapter.id');
     });
 }
 

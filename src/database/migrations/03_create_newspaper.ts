@@ -9,7 +9,7 @@ export async function up(knex: Knex) {
         table.string('text').notNullable();
         table.string('image_path').notNullable();
         table.integer('id_chapter').notNullable();
-        table.foreign('id_chapter').references('id').inTable('chapter');
+        table.foreign('id_chapter').references('chapter.id');
     });
 }
 

@@ -8,10 +8,10 @@ export async function up(knex: Knex) {
         table.string('description').notNullable();
         table.string('text_button_1').notNullable();
         table.string('text_button_2').notNullable();
-        table.integer('href_button_1').notNullable();
-        table.integer('href_button_2').notNullable();
+        table.string('href_button_1').notNullable();
+        table.string('href_button_2').notNullable();
         table.integer('id_chapter').notNullable();
-        table.foreign('id_chapter').references('id').inTable('chapter');
+        table.foreign('id_chapter').references('chapter.id');
     });
 }
 
