@@ -7,15 +7,20 @@ class ReportController {
         if (!chapterId) {
             const reports = await knex('report').select('*');
             return response.json(reports);
-        } else{
-            const missions = await knex('mission').where('id_chapter',Number(chapterId)).select('*');
-            return response.json(missions);
+        } else {
+            const reports = await knex('mission').where('id_chapter',Number(chapterId)).select('*');
+            return response.json(reports);
         }
     }
 
     async show(request: Request, response: Response) {
         const { id } = request.params;
-        const report = await knex('report').where('id', id).first();
+        const report    = await knex('report').where('id', id).first();
+
+        if (!report) {
+            return response.status(400).json({ message: "report not found" });
+        } 
+
         return response.json(report);
     }
 
